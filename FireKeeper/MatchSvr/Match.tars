@@ -4,7 +4,7 @@ module FireKeeper
 
 interface Match
 {
-    int test();
+    int AddInMatchList(unsigned long uid);
 };
 
 }; 

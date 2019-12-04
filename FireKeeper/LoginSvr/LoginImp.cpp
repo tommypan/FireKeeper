@@ -17,3 +17,7 @@ void LoginImp::destroy()
     //...
 }
 
+long LoginImp::GenUID()
+{
+    return 1;
+}

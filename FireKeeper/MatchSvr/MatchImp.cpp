@@ -17,3 +17,12 @@ void MatchImp::destroy()
     //...
 }
 
+int MatchImp::AddInMatchList(tars::TarsCurrentPtr current,unsigned long uid) 
+{ 
+    return 0;
+};
+
+void MatchImp::DoMatch()
+{
+    
+}

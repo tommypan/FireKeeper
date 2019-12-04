@@ -1,12 +1,9 @@
-
-:wq
-
 module FireKeeper
 {
 
 interface Lobby
 {
-    int test();
+    int GetPlayerByUID(Player & player,unsigned long uid);
 };
 
 }; 

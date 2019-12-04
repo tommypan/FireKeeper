@@ -29,7 +29,7 @@ public:
     /**
      *
      */
-    virtual int test(tars::TarsCurrentPtr current) { return 0;};
+    virtual int GetPlayerByUID(tars::TarsCurrentPtr current,Player & player,unsigned long uid) { return 0;};
 };
 /////////////////////////////////////////////////////
 #endif

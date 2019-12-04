@@ -4,7 +4,11 @@ module FireKeeper
 
 interface Room
 {
-    int test();
+    int NewRoom();
+
+    int DisposeRoom();
+
+    int EnterRoom(std::vector<ulong>& uidList);
 };
 
 }; 

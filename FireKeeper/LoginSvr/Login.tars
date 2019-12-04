@@ -4,7 +4,9 @@ module FireKeeper
 
 interface Login
 {
-    int test();
+    int Login();
+    
+    int Register();
 };
 
 }; 

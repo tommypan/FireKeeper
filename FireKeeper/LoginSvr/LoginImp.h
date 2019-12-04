@@ -29,7 +29,14 @@ public:
     /**
      *
      */
-    virtual int test(tars::TarsCurrentPtr current) { return 0;};
+    virtual int Login(tars::TarsCurrentPtr current) { return 0;};
+
+  /**
+     *
+     */
+    virtual int Register(tars::TarsCurrentPtr current) { return 0;};
+
+    long GenUID();
 };
 /////////////////////////////////////////////////////
 #endif

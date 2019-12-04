@@ -29,7 +29,9 @@ public:
     /**
      *
      */
-    virtual int test(tars::TarsCurrentPtr current) { return 0;};
+    virtual int AddInMatchList(tars::TarsCurrentPtr current,unsigned long uid) { return 0;};
+
+    void DoMatch();//遍历所有的进行匹配
 };
 /////////////////////////////////////////////////////
 #endif

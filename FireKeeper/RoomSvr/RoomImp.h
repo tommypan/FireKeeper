@@ -29,7 +29,13 @@ public:
     /**
      *
      */
-    virtual int test(tars::TarsCurrentPtr current) { return 0;};
+    virtual int EnterRoom(tars::TarsCurrentPtr current,std::vector<ulong>& uidList);
+
+    virtual int NewRoom(tars::TarsCurrentPtr current);
+
+    virtual int DisposeRoom(tars::TarsCurrentPtr current);
+
+    int LeaveRoom();
 };
 /////////////////////////////////////////////////////
 #endif
