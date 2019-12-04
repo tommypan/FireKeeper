@@ -1,0 +1,12 @@
+
+:wq
+
+module FireKeeper
+{
+
+interface Lobby
+{
+    int test();
+};
+
+}; 

@@ -1,0 +1,10 @@
+
+module FireKeeper
+{
+
+interface Router
+{
+    int test();
+};
+
+}; 
