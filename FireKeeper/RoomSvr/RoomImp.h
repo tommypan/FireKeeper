@@ -3,7 +3,7 @@
 
 #include "servant/Application.h"
 #include "Room.h"
-
+#include <vector>
 /**
  *
  *
@@ -29,13 +29,13 @@ public:
     /**
      *
      */
-    virtual int EnterRoom(const std::vector<unsigned long>& uidList,tars::TarsCurrentPtr current);
+    virtual int EnterRoom(const std::vector<long>& uidList,tars::TarsCurrentPtr current);
 
     virtual int NewRoom(tars::TarsCurrentPtr current);
 
     virtual int DisposeRoom(tars::TarsCurrentPtr current);
 
-    int LeaveRoom(unsigned long uid);
+    int LeaveRoom(long uid);
 };
 /////////////////////////////////////////////////////
 #endif

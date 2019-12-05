@@ -17,7 +17,7 @@ void RoomImp::destroy()
     //...
 }
 
-int RoomImp::EnterRoom(const std::vector<unsigned long>& uidList,tars::TarsCurrentPtr current)
+int RoomImp::EnterRoom(const std::vector<long>& uidList,tars::TarsCurrentPtr current)
 {
     return 0;
 }
@@ -32,7 +32,7 @@ int RoomImp::DisposeRoom(tars::TarsCurrentPtr current)
     return 0;
 }
 
-int RoomImp::LeaveRoom(unsigned long uid)
+int RoomImp::LeaveRoom(long uid)
 {
-
+    return 0;
 }

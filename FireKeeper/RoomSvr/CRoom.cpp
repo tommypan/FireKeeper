@@ -10,7 +10,7 @@ CRoom::~CRoom()
     Uninit();
 }
 
-void CRoom::CRoom(const CRoom& pl)
+CRoom::CRoom(const CRoom& p)
 {
     Copy(p);
 }

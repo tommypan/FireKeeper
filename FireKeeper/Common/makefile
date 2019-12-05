@@ -2,7 +2,7 @@
 #-----------------------------------------------------------------------
 
 APP       := FireKeeper
-TARGET    := RoomSvr
+TARGET    := Common
 CONFIG    := 
 STRIP_FLAG:= N
 TARS2CPP_FLAG:= 
@@ -13,5 +13,5 @@ LIB       +=
 #-----------------------------------------------------------------------
 
 include /usr/local/tars/cpp/makefile/makefile.tars
-include /home/tarsproto/FireKeeper/Common/Common.mk
+
 #-----------------------------------------------------------------------

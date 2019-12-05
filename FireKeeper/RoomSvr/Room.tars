@@ -8,7 +8,7 @@ interface Room
 
     int DisposeRoom();
 
-    int EnterRoom(out std::vector<unsigned long> uidList);
+    int EnterRoom(vector<long> uidList);
 };
 
 }; 

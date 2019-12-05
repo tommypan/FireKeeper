@@ -4,7 +4,7 @@ module FireKeeper
 
 interface Login
 {
-    int Login(string nickName, string pswd);
+    int LoginIn(string nickName, string pswd);
 
     int Register(string nickName, string pswd);
 };

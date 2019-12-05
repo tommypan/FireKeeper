@@ -11,20 +11,11 @@ enum MSG_ID
 
 struct PKG
 {
-    0 require unsigned long uid;
+    0 require long uid;//unsigned long 不支持？
 
     1 require unsigned int pkgHead;
 
-    2 require vector<char> pkgBody;
-};
-
-struct LoginReq
-{
-    0 require unsigned long uid;
-
-    1 require string pswd;
-
-    2 require char isRegiester;//0是注册，1是登录
+    2 require vector<byte> pkgBody;//不能用char？
 };
 
 enum Match_RSP_RET
@@ -36,22 +27,22 @@ enum Match_RSP_RET
 
 struct LoginReq
 {
-    0 require unsigned long uid;
+    0 require long uid;
 
     1 require string pswd;
 
-    2 require char isRegiester;//0是注册，1是登录
+    2 require byte isRegiester;//0是注册，1是登录
 };
 
 struct PlayerData
 {
-    0 require unsigned long uid;
+    0 require long uid;
 
     1 require string nickName;
     
-    2 unsigned long gold;
+    2 require long gold;
 
-    3 unsigned char grade;
+    3 require byte grade;
 
     4 require unsigned int resID;
 };
@@ -63,12 +54,12 @@ struct LoginRsp
 
 struct MatchReq
 {
-    0 require unsigned long uid;
+    0 require long uid;
 };
 
 struct MatchRsp
 {
-    0 require unsigned char ret;
+    0 require unsigned byte ret;
 };
 
 struct MatchNtf

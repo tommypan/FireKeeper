@@ -3,7 +3,7 @@
 
 #include "servant/Application.h"
 #include "Login.h"
-
+#include <iostream>
 /**
  *
  *
@@ -29,15 +29,15 @@ public:
     /**
      *
      */
-    virtual int Login(std::string nickName, std::string pswd,tars::TarsCurrentPtr current);
+    virtual int LoginIn(const std::string& nickName, const std::string& pswd,tars::TarsCurrentPtr current);
 
     /**
      *
      */
-    virtual int Register(std::string nickName, std::string pswd,tars::TarsCurrentPtr current);
+    virtual int Register(const std::string& nickName, const std::string& pswd,tars::TarsCurrentPtr current);
 
 
-    unsigned long GenUID();
+    long GenUID();
 };
 /////////////////////////////////////////////////////
 #endif

@@ -12,4 +12,4 @@ private:
     void Init();
     void Uninit();
     void Copy(const CRoom& p);
-}
+};
