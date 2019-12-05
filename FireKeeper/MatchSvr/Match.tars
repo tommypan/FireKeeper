@@ -5,6 +5,8 @@ module FireKeeper
 interface Match
 {
     int AddInMatchList(unsigned long uid);
+
+    int Dotransmit(ClientProto::PKG pkg);
 };
 
 }; 

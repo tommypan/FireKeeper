@@ -29,13 +29,13 @@ public:
     /**
      *
      */
-    virtual int EnterRoom(tars::TarsCurrentPtr current,std::vector<ulong>& uidList);
+    virtual int EnterRoom(const std::vector<unsigned long>& uidList,tars::TarsCurrentPtr current);
 
     virtual int NewRoom(tars::TarsCurrentPtr current);
 
     virtual int DisposeRoom(tars::TarsCurrentPtr current);
 
-    int LeaveRoom();
+    int LeaveRoom(unsigned long uid);
 };
 /////////////////////////////////////////////////////
 #endif

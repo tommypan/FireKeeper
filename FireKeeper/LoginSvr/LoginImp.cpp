@@ -17,7 +17,18 @@ void LoginImp::destroy()
     //...
 }
 
-long LoginImp::GenUID()
+int LoginImp::Login(std::string nickName, std::string pswd,tars::TarsCurrentPtr current)
+{
+    return 0;
+}
+
+
+int LoginImp::Register(std::string nickName, std::string pswd,tars::TarsCurrentPtr current)
+{ 
+    return 0;
+}
+
+unsigned long LoginImp::GenUID()
 {
     return 1;
 }

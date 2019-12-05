@@ -29,14 +29,15 @@ public:
     /**
      *
      */
-    virtual int Login(tars::TarsCurrentPtr current) { return 0;};
+    virtual int Login(std::string nickName, std::string pswd,tars::TarsCurrentPtr current);
 
-  /**
+    /**
      *
      */
-    virtual int Register(tars::TarsCurrentPtr current) { return 0;};
+    virtual int Register(std::string nickName, std::string pswd,tars::TarsCurrentPtr current);
 
-    long GenUID();
+
+    unsigned long GenUID();
 };
 /////////////////////////////////////////////////////
 #endif

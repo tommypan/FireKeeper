@@ -29,7 +29,12 @@ public:
     /**
      *
      */
-    virtual int AddInMatchList(tars::TarsCurrentPtr current,unsigned long uid) { return 0;};
+    virtual int AddInMatchList(unsigned long uid,tars::TarsCurrentPtr current);
+
+   /**
+     *
+     */
+    virtual int Dotransmit(const ClientProto::PKG& pkg,tars::TarsCurrentPtr current);
 
     void DoMatch();//遍历所有的进行匹配
 };

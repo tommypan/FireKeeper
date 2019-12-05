@@ -29,7 +29,12 @@ public:
     /**
      *
      */
-    virtual int GetPlayerByUID(tars::TarsCurrentPtr current,Player & player,unsigned long uid) { return 0;};
+    virtual int GetPlayerByUID(unsigned long uid,const PlayerData & player,tars::TarsCurrentPtr current);
+
+      /**
+     *
+     */
+    virtual int Dotransmit(const ClientProto::PKG& pkg,tars::TarsCurrentPtr current);
 };
 /////////////////////////////////////////////////////
 #endif

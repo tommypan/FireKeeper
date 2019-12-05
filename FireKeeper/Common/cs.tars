@@ -1,0 +1,78 @@
+
+module ClientProto
+{
+
+enum MSG_ID
+{
+    Login = 0,
+    Match = 1,
+
+};
+
+struct PKG
+{
+    0 require unsigned long uid;
+
+    1 require unsigned int pkgHead;
+
+    2 require vector<char> pkgBody;
+};
+
+struct LoginReq
+{
+    0 require unsigned long uid;
+
+    1 require string pswd;
+
+    2 require char isRegiester;//0是注册，1是登录
+};
+
+enum Match_RSP_RET
+{
+    SUCCESS = 0,
+    ISMATCHING = 1,
+    UNKONWERROR = 2,
+};
+
+struct LoginReq
+{
+    0 require unsigned long uid;
+
+    1 require string pswd;
+
+    2 require char isRegiester;//0是注册，1是登录
+};
+
+struct PlayerData
+{
+    0 require unsigned long uid;
+
+    1 require string nickName;
+    
+    2 unsigned long gold;
+
+    3 unsigned char grade;
+
+    4 require unsigned int resID;
+};
+
+struct LoginRsp
+{
+  0 require PlayerData playerData;
+};
+
+struct MatchReq
+{
+    0 require unsigned long uid;
+};
+
+struct MatchRsp
+{
+    0 require unsigned char ret;
+};
+
+struct MatchNtf
+{
+    0 require vector<PlayerData> matchPlayerList;
+};
+}; 

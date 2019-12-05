@@ -3,7 +3,9 @@ module FireKeeper
 
 interface Lobby
 {
-    int GetPlayerByUID(Player & player,unsigned long uid);
+    int GetPlayerByUID(unsigned long uid,out ClientProto::PlayerData player);
+
+    int Dotransmit(ClientProto::PKG pkg);
 };
 
 }; 
