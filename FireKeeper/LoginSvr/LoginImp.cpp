@@ -1,5 +1,6 @@
 #include "LoginImp.h"
 #include "servant/Application.h"
+#include "Macro.h"
 
 using namespace std;
 
@@ -19,6 +20,7 @@ void LoginImp::destroy()
 
 int LoginImp::LoginIn(const std::string& nickName,const std::string& pswd,tars::TarsCurrentPtr current)
 {
+    int test = Ret_Success;
     return 0;
 }
 

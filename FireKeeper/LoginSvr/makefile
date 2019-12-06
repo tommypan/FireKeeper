@@ -12,6 +12,6 @@ LIB       +=
 
 #-----------------------------------------------------------------------
 
-include /usr/local/tars/cpp/makefile/makefile.tars
 include /home/tarsproto/FireKeeper/Common/Common.mk
+include /usr/local/tars/cpp/makefile/makefile.tars
 #-----------------------------------------------------------------------
