@@ -13,6 +13,7 @@ RouterSvr::initialize()
     //...
 
     addServant<RouterImp>(ServerConfig::Application + "." + ServerConfig::ServerName + ".RouterObj");
+   _pushThread.start(); 
 }
 /////////////////////////////////////////////////////////////////
 void
@@ -20,6 +21,8 @@ RouterSvr::destroyApp()
 {
     //destroy application here:
     //...
+    _pushThread.terminate();
+    _pushThread.getThreadControl().join();
 }
 /////////////////////////////////////////////////////////////////
 int
