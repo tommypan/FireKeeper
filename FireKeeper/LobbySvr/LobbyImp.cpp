@@ -18,7 +18,7 @@ void LobbyImp::destroy()
 }
 
 
-int LobbyImp::GetPlayerByUID(unsigned long uid,const PlayerData & player,tars::TarsCurrentPtr current)
+int LobbyImp::GetPlayerByUID(long uid,const ClientProto::PlayerData & player,tars::TarsCurrentPtr current)
 {
     return 0;
 }

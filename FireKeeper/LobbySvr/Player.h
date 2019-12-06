@@ -7,7 +7,7 @@ class Player
 public:
     Player();
     ~Player();
-    Player(const Player& pl);
+    Player(const Player& p);
     void operator=(const Player& p);
 private:
     void Init();
@@ -20,4 +20,4 @@ private:
    std::string _nickName;
    unsigned int _elo;
    unsigned char _grade;
-}
+};

@@ -10,7 +10,7 @@ Player::~Player()
     Uninit();
 }
 
-void Player::Player(const Player& pl)
+Player::Player(const Player& p)
 {
     Copy(p);
 }

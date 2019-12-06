@@ -1,9 +1,11 @@
+#include "/home/tarsproto/FireKeeper/Common/cs.tars"
+
 module FireKeeper
 {
 
 interface Lobby
 {
-    int GetPlayerByUID(long uid,out ClientProto::PlayerData player);
+    int GetPlayerByUID(long uid,ClientProto::PlayerData player);
 
     int Dotransmit(ClientProto::PKG pkg);
 };

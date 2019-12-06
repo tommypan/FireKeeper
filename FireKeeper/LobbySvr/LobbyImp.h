@@ -29,7 +29,7 @@ public:
     /**
      *
      */
-    virtual int GetPlayerByUID(unsigned long uid,const PlayerData & player,tars::TarsCurrentPtr current);
+    virtual int GetPlayerByUID(long uid,const ClientProto::PlayerData & player,tars::TarsCurrentPtr current);
 
       /**
      *
