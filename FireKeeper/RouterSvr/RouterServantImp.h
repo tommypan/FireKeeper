@@ -27,7 +27,7 @@ public:
 
 
     /**
-     *重载Servant的doRequest方法
+     *收
      */
     int doRequest(tars::TarsCurrentPtr current, vector<char>& response);
 

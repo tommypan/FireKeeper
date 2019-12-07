@@ -10,10 +10,13 @@ public:
     static TC_ThreadMutex mapMutex;
 };
 
-class RouterPushThread : public TC_Thread, public TC_ThreadLock
+/**
+处理超时掉线玩家
+**/
+class TickThread : public TC_Thread, public TC_ThreadLock
 {
 public:
-    RouterPushThread():_bTerminate(false),_tLastPushTime(0),_tInterval(10),_iId(0){}
+    TickThread():_bTerminate(false),_tLastPushTime(0),_tInterval(10),_iId(0){}
 
     virtual void run();
 

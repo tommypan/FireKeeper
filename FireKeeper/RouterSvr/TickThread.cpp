@@ -1,11 +1,11 @@
-#include "RouterPushThread.h"
+#include "TickThread.h"
 #include <arpa/inet.h>
 
 map<string, TarsCurrentPtr> PushUser::pushUser;
 TC_ThreadMutex PushUser::mapMutex;
 
 
-void RouterPushThread::terminate(void)
+void TickThread::terminate(void)
 {
     _bTerminate = true;
     {
@@ -14,7 +14,7 @@ void RouterPushThread::terminate(void)
     }
 }
 
-void RouterPushThread::setPushInfo(const string &sInfo)
+void TickThread::setPushInfo(const string &sInfo)
 {
       unsigned int iBuffLength = htonl(sInfo.size()+8);
     unsigned char * pBuff = (unsigned char*)(&iBuffLength);
@@ -36,7 +36,7 @@ void RouterPushThread::setPushInfo(const string &sInfo)
     _sPushInfo += sInfo;
 }
 
-void RouterPushThread::run(void)
+void TickThread::run(void)
 {
     time_t iNow;
 

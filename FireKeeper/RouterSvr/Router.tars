@@ -1,10 +1,12 @@
 
+#include "/home/tarsproto/FireKeeper/Common/cs.tars"
+
 module FireKeeper
 {
 
 interface Router
 {
-    int test();
+    int PushMessage2Client(long uid,ClientProto::PKG pkg);
 };
 
 }; 

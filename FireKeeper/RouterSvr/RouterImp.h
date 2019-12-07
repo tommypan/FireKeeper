@@ -27,9 +27,9 @@ public:
     virtual void destroy();
 
     /**
-     *
+     *发
      */
-    virtual int test(tars::TarsCurrentPtr current) { return 0;};
+    virtual int PushMessage2Client(long uid,const ClientProto::PKG& pkg,tars::TarsCurrentPtr current);
 };
 /////////////////////////////////////////////////////
 #endif

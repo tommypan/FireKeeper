@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include "servant/Application.h"
-#include "RouterPushThread.h"
+#include "TickThread.h"
+#include "ServantPrxCallback.h"
 
 using namespace tars;
 
@@ -29,7 +30,9 @@ public:
     virtual void destroyApp();
 
 private:
-    RouterPushThread _pushThread;
+    TickThread _tickThread;
+
+    ServantPrxCallback* _servantPrxCallback;
 };
 
 extern RouterSvr g_app;
