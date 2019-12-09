@@ -4,7 +4,7 @@
 #include <iostream>
 #include "servant/Application.h"
 #include "TickThread.h"
-#include "ServantPrxCallback.h"
+#include "SSPrxCallback.h"
 
 using namespace tars;
 
@@ -32,7 +32,7 @@ public:
 private:
     TickThread _tickThread;
 
-    ServantPrxCallback* _servantPrxCallback;
+    SSPrxCallback* _servantPrxCallback;
 };
 
 extern RouterSvr g_app;

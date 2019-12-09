@@ -1,3 +1,4 @@
+#include "/home/tarsproto/FireKeeper/Common/cs.tars"
 
 module FireKeeper
 {

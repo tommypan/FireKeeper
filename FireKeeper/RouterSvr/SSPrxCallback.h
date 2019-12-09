@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Match.h"
 
 class SSPrxCallback
 {
@@ -17,7 +18,7 @@ private:
 private:
 };
 
-class MatchCallback : public MatchPrxCallback
+class MatchCallback : public FireKeeper::MatchPrxCallback
 {
     public:
     MatchCallback(){};
@@ -26,4 +27,4 @@ class MatchCallback : public MatchPrxCallback
     virtual void callback_Dotransmit(tars::Int32 ret,ClientProto::PKG pkg);
 
     virtual void callback_Dotransmit_exception(tars::Int32 ret);
-}
+};
